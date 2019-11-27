@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CartModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>My Cart</h2>
+<table class="table table-hover table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                ProductId
+            </th>
+            <th>
+                Product Name
+            </th>
+            <th>
+                Product Type
+            </th>
+            <th>
+                Go To Product Page
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.productCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.productName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.productTypeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.productUrl)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

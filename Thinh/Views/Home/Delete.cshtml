@@ -1,0 +1,52 @@
+﻿@model Thinh.Models.Product
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HomePageModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.productName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.productName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.productCategory)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.productCategory)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.productUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.productUrl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.productDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.productDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.productImgUrl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.productImgUrl)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="productId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
