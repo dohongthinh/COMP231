@@ -24,7 +24,7 @@ namespace Thinh.Models
                         //productId= 1 ,
                         productImgUrl = "https://images-na.ssl-images-amazon.com/images/I/61SVEUsMepL._SL1024_.jpg",
                         productName = "Samsung Galaxy A20 32GB A205G/DS 6.4 HD + 4,"+
-                        "000mAh Battery LTE Factory Unlocked GSM Smartphone(International Version, No Warranty)(Deep Blue)",
+                        "000mAh Battery LTE Factory",
                         productUrl = "https://www.amazon.com/Samsung-DS-Unlocked-Smartphone-International/dp/B07QV2JKGQ/ref=sxin_0_ac_d_rm?ac_md=3-3-c2Ftc3VuZyBnYWxheHk%3D-ac_d_rm&crid=101VGUI07M0WW&keywords=phone&pd_rd_i=B07QV2JKGQ&pd_rd_r=0ce275e5-3539-49ea-bca7-1f86ba0c21b3&pd_rd_w=Qdnd7&pd_rd_wg=nx2FJ&pf_rd_p=e2f20af2-9651-42af-9a45-89425d5bae34&pf_rd_r=7WXJGQHR1JTJRGWP4FD4&psc=1&qid=1574825321&sprefix=phone%2Caps%2C236",                       
                         productCategory = "Electronics",
                         productDescription = "Shoot more awesomeness with the 123° Ultra Wide lens."
