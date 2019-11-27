@@ -10,11 +10,11 @@ using Thinh.Models;
 
 namespace Thinh.Controllers
 {
-    public class HomePageController : Controller
+    public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ProductDbContext _context;
 
-        public HomePageController(ApplicationDbContext context)
+        public HomeController(ProductDbContext context)
         {
             _context = context;
         }

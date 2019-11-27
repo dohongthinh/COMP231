@@ -74,18 +74,18 @@ namespace Thinh
                 .AddDefaultTokenProviders();
 
             // cookie settings
-            //services.ConfigureApplicationCookie(options =>
-            //{
-            //    // Cookie settings
-            //    options.Cookie.HttpOnly = identityDefaultOptions.CookieHttpOnly;
-            //    options.Cookie.Expiration = TimeSpan.FromDays(identityDefaultOptions.CookieExpiration);
-            //    options.LoginPath = identityDefaultOptions.LoginPath; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
-            //    options.LogoutPath = identityDefaultOptions.LogoutPath; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
-            //    options.AccessDeniedPath = identityDefaultOptions.AccessDeniedPath; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
-            //    options.SlidingExpiration = identityDefaultOptions.SlidingExpiration;
-            //});
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = identityDefaultOptions.CookieHttpOnly;
+                options.Cookie.Expiration = TimeSpan.FromDays(identityDefaultOptions.CookieExpiration);
+                options.LoginPath = identityDefaultOptions.LoginPath; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
+                options.LogoutPath = identityDefaultOptions.LogoutPath; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
+                options.AccessDeniedPath = identityDefaultOptions.AccessDeniedPath; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
+                options.SlidingExpiration = identityDefaultOptions.SlidingExpiration;
+            });
 
-            services.AddCors();
+            //services.AddCors();
             services.AddTransient<IProductRepository, EFProductRepository>();
             services.AddMemoryCache();
             services.AddSession();
@@ -108,7 +108,7 @@ namespace Thinh
 
             //app.UseHttpsRedirection();
             //app.UseStaticFiles();
-            //app.UseCookiePolicy();
+            app.UseCookiePolicy();
 
             //app.UseAuthentication();
             app.UseDeveloperExceptionPage();
@@ -116,13 +116,13 @@ namespace Thinh
             app.UseStaticFiles();
             app.UseSession();
             app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
-            //app.UseMvc(routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=Account}/{action=Login}"/*/{id?}*/);
-            //});
+            //app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}"/*/{id?}*/);
+            });
 
             SeedData.EnsurePopulated(app);
         }
