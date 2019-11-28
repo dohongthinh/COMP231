@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\Desktop\\COMP231-master\\Thinh\\Thinh.csproj": {}
+    "C:\\Users\\Huy Hoang\\Desktop\\Fifth semester\\COMP231-master\\Thinh\\Thinh.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\Desktop\\COMP231-master\\Thinh\\Thinh.csproj": {
+    "C:\\Users\\Huy Hoang\\Desktop\\Fifth semester\\COMP231-master\\Thinh\\Thinh.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\COMP231-master\\Thinh\\Thinh.csproj",
+        "projectUniqueName": "C:\\Users\\Huy Hoang\\Desktop\\Fifth semester\\COMP231-master\\Thinh\\Thinh.csproj",
         "projectName": "Thinh",
-        "projectPath": "C:\\Users\\Dell\\Desktop\\COMP231-master\\Thinh\\Thinh.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\Desktop\\COMP231-master\\Thinh\\obj\\",
+        "projectPath": "C:\\Users\\Huy Hoang\\Desktop\\Fifth semester\\COMP231-master\\Thinh\\Thinh.csproj",
+        "packagesPath": "C:\\Users\\Huy Hoang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Huy Hoang\\Desktop\\Fifth semester\\COMP231-master\\Thinh\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Huy Hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -159,7 +159,7 @@ namespace Thinh.Models
                     new Product
                     {
                         //productId = 12,
-                        productImgUrl = "https://cdn.shopify.com/s/files/1/0472/3357/products/wayfarer_front_2048x.png",
+                        productImgUrl = "https://images.thenorthface.com/is/image/TheNorthFace/NF0A3KP8_V3T_hero?$638x745$",
                         productName = "Men's Gore CloseFit Fleece Gloves",
                         productDescription = "Say goodbye to cold hands that are of little to no use; these lightweight and streamlined multi-season gloves feature an ultra-durable, windproof, three-layer shell and a soft, brushed-fleece lining for versatile warmth during wintry hikes. Now, you’ll actually be able to turn your keys in the ignition once you get back to the car.",
                         productCategory = "Accessory",

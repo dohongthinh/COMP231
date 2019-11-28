@@ -8,15 +8,10 @@
 <h2>Details</h2>
 
 <div>
-    <h4>HomePageModel</h4>
+    <h4>@Html.DisplayFor(model => model.productName)</h4>
     <hr />
-    <dl class="dl-horizontal">     
-        <dt>
-            @Html.DisplayNameFor(model => model.productName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.productName)
-        </dd>
+    <img src="@Html.DisplayFor(model => model.productImgUrl)" alt="@Html.DisplayFor(model => model.productName)">
+    <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.productCategory)
         </dt>
@@ -24,24 +19,15 @@
             @Html.DisplayFor(model => model.productCategory)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.productUrl)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.productUrl)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.productDescription)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.productDescription)
         </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.productImgUrl)
-        </dt>
         <dd>
-            @Html.DisplayFor(model => model.productImgUrl)
+            <a href="@Html.DisplayFor(model => model.productUrl)">Visit Seller</a>
         </dd>
-    </dl>
+    </dl>   
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.productId">Edit</a> |

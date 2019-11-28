@@ -12,8 +12,8 @@ namespace Thinh.Data
         public ProductDbContext(DbContextOptions<ProductDbContext> options)
             : base(options)
         {
-
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Feedbacks> Feedbacks { get; set; }
     }
 }

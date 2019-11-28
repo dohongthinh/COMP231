@@ -193,3 +193,85 @@ C:\Users\Dell\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.Views.p
 C:\Users\Dell\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.dll
 C:\Users\Dell\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
 C:\Users\Dell\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.deps.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.runtimeconfig.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.runtimeconfig.dev.json
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.dll
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.pdb
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.dll
+C:\Users\pviet\Desktop\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.pdb
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csprojAssemblyReference.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfoInputs.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfo.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.TagHelpers.input.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.TagHelpers.output.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorCoreGenerate.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Delete.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorTargetAssemblyInfo.cache
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorTargetAssemblyInfo.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.Views.pdb
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.dll
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\pviet\Desktop\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.deps.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.runtimeconfig.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.runtimeconfig.dev.json
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.dll
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.pdb
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.dll
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.pdb
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csprojAssemblyReference.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfoInputs.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfo.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.TagHelpers.input.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.TagHelpers.output.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorCoreGenerate.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Delete.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Search.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorTargetAssemblyInfo.cache
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorTargetAssemblyInfo.cs
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.Views.pdb
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.dll
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
+C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete

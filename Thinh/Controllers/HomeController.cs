@@ -149,5 +149,39 @@ namespace Thinh.Controllers
         {
             return _context.Products.Any(e => e.productId == id);
         }
-    }
+
+        public ViewResult Contact()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Contact([Bind("Email,Feedback")] Feedbacks fb)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Feedbacks.Add(fb);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(fb);
+        }
+
+		// GET: HomePage/Details/5
+		[HttpPost]
+		public IActionResult Search(string search)
+		{
+			if (search == null)
+			{
+				return View();
+			}
+			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
+			if (homePageModel == null)
+			{
+				return NotFound();
+			}
+
+			return View("Search", homePageModel);
+		}
+	}
 }
