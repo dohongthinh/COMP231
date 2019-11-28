@@ -173,7 +173,7 @@ namespace Thinh.Controllers
 		{
 			if (search == null)
 			{
-				return View("Index");
+				return Redirect("Index");
 			}
 			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
 			if (homePageModel == null)

@@ -9,16 +9,20 @@ namespace Thinh.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        [Required(ErrorMessage = "Please Enter Your Name")]
-        [Display(Name = "FullName")]
-        public string FullName { get; set; }
+        //public ApplicationUser(string userName) : base(userName)
+        //{
+        //}
 
-        public string Address { get; set; }
+        //[Required(ErrorMessage = "Please Enter Your Name")]
+        //[Display(Name = "FullName")]
+        //public string FullName { get; set; }
 
-        [Required]
-        [DataType(DataType.Date)]
-        public DateTime? DateOfBirth { get; set; }
+        //public string Address { get; set; }
 
-        public int IsTeacher { get; set; }
+        //[Required]
+        //[DataType(DataType.Date)]
+        //public DateTime? DateOfBirth { get; set; }
+
+        public int IsAdmin { get; set; }
     }
 }
