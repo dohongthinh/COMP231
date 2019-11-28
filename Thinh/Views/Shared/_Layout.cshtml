@@ -6,20 +6,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>@ViewData["Title"] - Thinh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Thinh</title>
 
-	<environment include="Development">
-		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-		<link rel="stylesheet" href="~/css/site.css" />
-	</environment>
-	<environment exclude="Development">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-			  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-			  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-		<link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-	</environment>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -36,13 +36,16 @@
             <div class="navbar-collapse collapse">
 
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    <li>@Html.ActionLink("Furnitures", "Category", "Home", new { search = "Furniture" }, null)</li>
+                    <li>@Html.ActionLink("Electronics", "Category", "Home", new { search = "Electronics" }, null)</li>
+                    <li>@Html.ActionLink("Accessories", "Category", "Home", new { search = "Accessory" }, null)</li>
+                    <li>@Html.ActionLink("Vehicles", "Category", "Home", new { search = "Vehicles" }, null)</li>\
                 </ul>
 
                 <form asp-controller="Home" asp-action="Search">
                     <ul class="nav navbar-nav">
                         <li>
-                            <input style="margin-top: .75em" size="88" type="text" placeholder="Search.." name="search">
+                            <input style="margin-top: .75em" size="48" type="text" placeholder="Search.." name="search">
                         </li>
                         <li><button type="submit" style="margin-top: .75em"><i class="glyphicon glyphicon-search"></i></button></li>
                     </ul>
@@ -72,12 +75,13 @@
 
     <div class="container body-content">
         @RenderBody()
+        <div style="position: fixed; right: 10%; bottom: 0;"><a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Contact" title="Contact Us">CONTACT US</a></div>
         <hr />
         <footer>
-            <p>&copy; 2019 - Thinh&Viet Anh</p>
+            <p>&copy; 2019 - Thinh &  Viet Anh</p>
         </footer>
     </div>
-    <div><a type="button" class="btn btn-default" asp-controller="Home" asp-action="Contact">Contact Us</a></div>
+
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>

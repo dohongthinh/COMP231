@@ -173,9 +173,24 @@ namespace Thinh.Controllers
 		{
 			if (search == null)
 			{
-				return View();
+				return View("Index");
 			}
 			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
+			if (homePageModel == null)
+			{
+				return NotFound();
+			}
+
+			return View("Search", homePageModel);
+		}
+
+		public IActionResult Category(string search)
+		{
+			if (search == null)
+			{
+				return View("Index");
+			}
+			var homePageModel = _context.Products.Where(x => x.productCategory == search);
 			if (homePageModel == null)
 			{
 				return NotFound();
