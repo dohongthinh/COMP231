@@ -123,7 +123,7 @@ namespace Thinh
                     name: "default",
                     template: "{controller=Home}/{action=Index}"/*/{id?}*/);
             });
-
+            IdentitySeed.EnsurePopulated(app);
             SeedData.EnsurePopulated(app);
         }
     }

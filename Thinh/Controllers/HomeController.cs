@@ -176,7 +176,11 @@ namespace Thinh.Controllers
 			ViewData["Title"] = title;
 			if (search == null)
 			{
+<<<<<<< HEAD
 				return Redirect("index");
+=======
+				return Redirect("Index");
+>>>>>>> 57ebb562251c834765306ca6c5deb147d11c1caa
 			}
 			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
 			if (homePageModel == null)
