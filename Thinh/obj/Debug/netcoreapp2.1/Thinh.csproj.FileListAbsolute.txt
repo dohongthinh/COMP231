@@ -298,7 +298,6 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\R
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Delete.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.cshtml.g.cs
@@ -316,3 +315,5 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\T
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.dll
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Seller\Create.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Wishlist.cshtml.g.cs

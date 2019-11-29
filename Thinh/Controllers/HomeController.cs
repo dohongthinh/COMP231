@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,16 +14,15 @@ namespace Thinh.Controllers
     public class HomeController : Controller
     {
         private readonly ProductDbContext _context;
-
-        public HomeController(ProductDbContext context)
+		public HomeController(ProductDbContext context)
         {
             _context = context;
-        }
+		}
 
         // GET: HomePage
         public async Task<IActionResult> Index()
-        {
-            return View(await _context.Products.ToListAsync());
+		{
+			return View(await _context.Products.ToListAsync());
         }
 
         // GET: HomePage/Details/5
@@ -54,11 +54,12 @@ namespace Thinh.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("productId,productCode,productName,productTypeName,productUrl,productDescription,productImg")] Product homePageModel)
+        public async Task<IActionResult> Create([Bind("productId,productCode,productName,productTypeName,productUrl,productDescription,productImg,Price,DateAdded")] Product homePageModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(homePageModel);
+				homePageModel.DateAdded = DateTime.Now;
+				_context.Add(homePageModel);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -171,9 +172,11 @@ namespace Thinh.Controllers
 		[HttpPost]
 		public IActionResult Search(string search)
 		{
+			string title = "Search results for \"" + search + "\"";
+			ViewData["Title"] = title;
 			if (search == null)
 			{
-				return View("Index");
+				return Redirect("index");
 			}
 			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
 			if (homePageModel == null)
@@ -186,6 +189,7 @@ namespace Thinh.Controllers
 
 		public IActionResult Category(string search)
 		{
+			ViewData["Title"] = search;
 			if (search == null)
 			{
 				return View("Index");
@@ -197,6 +201,42 @@ namespace Thinh.Controllers
 			}
 
 			return View("Search", homePageModel);
+		}
+
+		public IActionResult Wish(int id)
+		{
+			if (id == 0)
+			{
+				return NotFound();
+			}
+			var test = _context.Products
+				.FirstOrDefault(m => m.productId == id);
+			if (test == null)
+			{
+				return NotFound();
+			}
+			List<Product> wishlist = HttpContext.Session.GetCart();
+			bool alreadyExists = wishlist.Any(x => x.productId == id);
+			if (!alreadyExists)
+			{
+				wishlist.Add(test);
+			}
+			HttpContext.Session.SaveCart(wishlist);
+			return View("Wishlist", wishlist);
+		}
+		public IActionResult Wishlist()
+		{
+			List<Product> wishlist = HttpContext.Session.GetCart();
+			return View("Wishlist", wishlist);
+		}
+		public IActionResult DeleteWish(int id)
+		{
+			List<Product> wishlist = HttpContext.Session.GetCart();
+			var item = wishlist.SingleOrDefault(x => x.productId == id);
+			if (item != null)
+				wishlist.Remove(item);
+			HttpContext.Session.SaveCart(wishlist);
+			return View("Wishlist", wishlist);
 		}
 	}
 }

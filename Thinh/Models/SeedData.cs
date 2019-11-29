@@ -151,7 +151,7 @@ namespace Thinh.Models
                         productImgUrl = "https://cdn.shopify.com/s/files/1/0472/3357/products/wayfarer_front_2048x.png",
                         productName = "Ray-Ban New Wayfarer",
                         productDescription = "Go back to where it all began with Ray-Ban New Wayfarer Classic sunglasses. Using the same iconic shape as the classic Wayfarer, these sunglasses offer an updated version that includes a smaller frame and slightly softer eye shape.",
-                        productCategory = "Accessory",
+                        productCategory = "Accessories",
                         productUrl = "https://www.ray-ban.com/canada/en/sunglasses/RB2132%20UNISEX%20047-new%20wayfarer%20classic-gloss%20black/805289052418",
                         Price = "177.99$",
                         DateAdded = DateTime.Now
@@ -162,7 +162,7 @@ namespace Thinh.Models
                         productImgUrl = "https://images.thenorthface.com/is/image/TheNorthFace/NF0A3KP8_V3T_hero?$638x745$",
                         productName = "Men's Gore CloseFit Fleece Gloves",
                         productDescription = "Say goodbye to cold hands that are of little to no use; these lightweight and streamlined multi-season gloves feature an ultra-durable, windproof, three-layer shell and a soft, brushed-fleece lining for versatile warmth during wintry hikes. Now, you’ll actually be able to turn your keys in the ignition once you get back to the car.",
-                        productCategory = "Accessory",
+                        productCategory = "Accessories",
                         productUrl = "https://www.thenorthface.com/shop/mens-gore-closefit-fleece-gloves-nf0a3kp8",
                         Price = "50.00$",
                         DateAdded = DateTime.Now
@@ -173,7 +173,7 @@ namespace Thinh.Models
                         productImgUrl = "https://cdn.shopify.com/s/files/1/0133/7012/products/MEC-Ti5Wallet-BLK-Main.jpg",
                         productName = "Ti5 Slim Wallet | Black DLC",
                         productDescription = "This is the Machine Era Ti5 Wallet + Black DLC PVD Coating. Ultra-light, ultra-durable, super-svelte, and bottle-opening – it's the slimmest, lightest, and strongest wallet you’ll find, and an all-around cornerstone to your everyday carry.",
-                        productCategory = "Accessory",
+                        productCategory = "Accessories",
                         productUrl = "https://www.machine-era.com/collections/frontpage/products/ti5-slim-wallet-dlc",
                         Price = "65.00$",
                         DateAdded = DateTime.Now
@@ -184,7 +184,7 @@ namespace Thinh.Models
                         productImgUrl = "https://res.cloudinary.com/guess-img/image/upload/c_fill,dpr_3.0,f_auto,g_auto,h_1200,q_auto,w_800/c_fill,h_1200,w_800/v1/NA/Style/ECOMM/DX19101-BLUSH",
                         productName = "Julina Quilted Crossbody",
                         productDescription = "Give your look a polished finish with this faux-leather crossbody, featuring quilted details, a logo emblem and rhinestone-embellished charms for added glam. Back pocket. Fold-over flap with magnetic snap-button closure and zippered interior pocket.",
-                        productCategory = "Accessory",
+                        productCategory = "Accessories",
                         productUrl = "https://www.guessfactory.ca/en/catalog/view/women/handbags/view-all/julina-quilted-crossbody/dx-19-101?color=blush",
                         Price = "54.99$",
                         DateAdded = DateTime.Now
@@ -195,7 +195,7 @@ namespace Thinh.Models
                         productImgUrl = "https://images.canadagoose.com/image/upload/v1563815808/product-image/5816MP_831.jpg",
                         productName = "Forester Jacket Print",
                         productDescription = "The Forester Jacket is crafted from our durable Arctic Tech® fabric and cut in a shorter length, making it an easy top layer to throw on and go. It's detailed with military-inspired exterior pockets to stow the smaller items, and finished with a double-layered collar for extra protection around the face.",
-                        productCategory = "Accessory",
+                        productCategory = "Accessories",
                         productUrl = "https://www.canadagoose.com/ca/en/forester-jacket-print-5816MP.html",
                         Price = "850.00$",
                         DateAdded = DateTime.Now
@@ -206,7 +206,7 @@ namespace Thinh.Models
                         productImgUrl = "https://cdn.shopify.com/s/files/1/2660/5106/products/zwaybzrube4i3yrukfq2_1400x.jpg",
                         productName = "Tessaro Pop-Up Sofabed - Charcoal",
                         productDescription = "With the Tessaro Pop-Up Sofabed, you have everything at your fingertips — from a convenient guest bed to spacious, hidden storage and a practical, comfortable sofa for the whole family. Featuring easy-care, polyester fabric in a dark charcoal hue, the Tessaro simultaneously delivers impressive functionality and rich, contemporary style.",
-                        productCategory = "Furniture",
+                        productCategory = "Furnitures",
                         productUrl = "https://www.leons.ca/products/tessaro-pop-up-sofabed-charcoal",
                         Price = "799.00$",
                         DateAdded = DateTime.Now
@@ -217,7 +217,7 @@ namespace Thinh.Models
                         productImgUrl = "https://www.sleepfactory.com/wp-content/uploads/2019/06/2206_Madrid-Metal-Fabric-Platform-Bed-REG.jpg",
                         productName = "Madrid Metal Upholstered Platform Bed",
                         productDescription = "The Madrid platform bed has a bold, contemporary design that will help create a sleeping area sure to impress. With sharp lines, metal frame and nailheads on the grey linen-style fabric. Centre supports, metal slat system. No box spring required.",
-                        productCategory = "Furniture",
+                        productCategory = "Furnitures",
                         productUrl = "https://www.sleepfactory.com/product/madrid-metal-upholstered-platform-bed/",
                         Price = "199.00$",
                         DateAdded = DateTime.Now
@@ -228,7 +228,7 @@ namespace Thinh.Models
                         productImgUrl = "https://cdn.shopify.com/s/files/1/2660/5202/products/e6l8w8byazjbfqb5pmeb_1400x.jpg",
                         productName = "Talia 5-Piece Dining Package",
                         productDescription = "Start your family traditions around a classic set of furniture like this Talia five-piece dining package. At the centre of the mix is the thickset, solid wood table. It extends an extra 18 inches thanks to the removable leaf. The rest of the wood surfaces are capped with lustrous mango veneers, known for their beautiful wood grain and a tendency to age gracefully. Around the table is a set of matching dining chairs. Wrapped in resilient faux leather and generously padded, no one will be in too much of a hurry to abandon their seats.",
-                        productCategory = "Furniture",
+                        productCategory = "Furnitures",
                         productUrl = "https://www.thebrick.com/products/talia-5-piece-dining-package",
                         Price = "749.98$",
                         DateAdded = DateTime.Now
@@ -239,7 +239,7 @@ namespace Thinh.Models
                         productImgUrl = "https://www.ikea.com/ca/en/images/products/lots-mirror__0344836_PH119895_S5.JPG",
                         productName = "LOTS",
                         productDescription = "Filling a wall with mirrors is a simple way to make a small room feel larger. Add as many squares as you want to create the shape and size of mirror you want.",
-                        productCategory = "Furniture",
+                        productCategory = "Furnitures",
                         productUrl = "https://www.ikea.com/ca/en/p/lots-mirror-39151700/",
                         Price = "9.99$",
                         DateAdded = DateTime.Now
@@ -250,7 +250,7 @@ namespace Thinh.Models
                         productImgUrl = "https://www.structube.com/media/catalog/product/cache/1/thumbnail/900x698/f118ec6a7f8417e96ed53a398f5e2e6d/0/1/01-97.38.50.97_coffeetable_mika-97.38.50.97.jpg",
                         productName = "MIKA Coffee table",
                         productDescription = "With Mika you can have it all. A refined design featuring a ceramic top, providing an elegant marble look, ample storage, and a considerate footprint. Place Mika at the center of your living space for a fresh pop of modern excellence.",
-                        productCategory = "Furniture",
+                        productCategory = "Furnitures",
                         productUrl = "https://www.structube.com/en/mika-coffee-table-110cm-43-97-38-50?pid=27632",
                         Price = "329.00$",
                         DateAdded = DateTime.Now

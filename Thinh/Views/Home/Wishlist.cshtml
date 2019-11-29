@@ -1,0 +1,16 @@
+﻿@model List<Thinh.Models.Product>
+@{
+    ViewData["Title"] = "Wishlist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Wishlist</h2>
+
+@foreach (var item in Model)
+{
+    <a href="@item.productUrl">@item.productName</a>
+    <a class="btn btn-info btn-sm" asp-action="DeleteWish" asp-route-id="@item.productId">
+        <span class="glyphicon glyphicon-remove"></span>
+    </a>
+    <br />
+}

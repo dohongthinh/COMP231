@@ -9,7 +9,6 @@ namespace Thinh.Models
     public class Product
     {
         //[Key]
-        [StringLength(38)]
         [Display(Name = "Product Id")]
         public int productId { get; set; }
 

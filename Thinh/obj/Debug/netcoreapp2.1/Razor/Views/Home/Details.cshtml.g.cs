@@ -142,7 +142,7 @@ WriteAttributeValue("", 754, Html.DisplayFor(model => model.productUrl), 754, 43
             WriteLiteral(">Visit Seller</a>\n        </dd>\n    </dl>   \n</div>\n<div>\n    ");
             EndContext();
             BeginContext(860, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d05fc2f528b4e53baba5888a464f65d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6ab290638104b7983838ec55a0fd978", async() => {
                 BeginContext(913, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -177,7 +177,7 @@ WriteAttributeValue("", 754, Html.DisplayFor(model => model.productUrl), 754, 43
             WriteLiteral(" |\n    ");
             EndContext();
             BeginContext(928, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "57917c12735340c485f19b29425f92a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3cc8aaaec16f49ba9493cde537d9a609", async() => {
                 BeginContext(950, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();
