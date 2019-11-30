@@ -1,0 +1,16 @@
+﻿@model Thinh.Models.ApplicationUser
+@{
+    ViewData["Title"] = "UserInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserInfo</h2>
+@{ if (Model.IsAdmin == 1)
+    {
+        <a asp-area="" asp-controller="Home" asp-action="ApproveList" title="Pending">Pending</a>
+    }
+    else
+    {
+        <a asp-area="" asp-controller="Home" asp-action="Index" title="Manage">Lul Send Halp</a>
+    }
+}

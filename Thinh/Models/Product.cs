@@ -32,5 +32,7 @@ namespace Thinh.Models
         public string Price { get; set; }
         public DateTime DateAdded { get; set; }
         public DateTime? LastEdit { get; set; }
-    }
+
+		public int IsApproved { get; set; }
+	}
 }

@@ -302,7 +302,6 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\R
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Search.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -317,3 +316,7 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\T
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Seller\Create.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Wishlist.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Search.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Approve.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Info.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserInfo.cshtml.g.cs

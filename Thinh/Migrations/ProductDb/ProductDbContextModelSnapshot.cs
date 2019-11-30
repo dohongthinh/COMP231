@@ -38,10 +38,11 @@ namespace Thinh.Migrations.ProductDb
                 {
                     b.Property<int>("productId")
                         .ValueGeneratedOnAdd()
-                        .HasMaxLength(38)
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateAdded");
+
+                    b.Property<int>("IsApproved");
 
                     b.Property<DateTime?>("LastEdit");
 

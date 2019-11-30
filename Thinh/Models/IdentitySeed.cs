@@ -10,8 +10,8 @@ namespace Thinh.Models
 {
     public class IdentitySeed
     {
-        private const string user1 = "Admin1";
-        private const string user2 = "Admin2";
+        private const string user1 = "Admin1@gmail.com";
+        private const string user2 = "Admin2@gmail.com";
         private const string userPassword = "123456";
 
 

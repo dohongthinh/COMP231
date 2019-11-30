@@ -22,7 +22,7 @@ namespace Thinh.Controllers
         // GET: HomePage
         public async Task<IActionResult> Index()
 		{
-			return View(await _context.Products.ToListAsync());
+			return View(await _context.Products.Where(x=>x.IsApproved ==1).OrderByDescending(x => x.DateAdded).ToListAsync());
         }
 
         // GET: HomePage/Details/5
@@ -169,26 +169,21 @@ namespace Thinh.Controllers
         }
 
 		// GET: HomePage/Details/5
-		[HttpPost]
 		public IActionResult Search(string search)
 		{
 			string title = "Search results for \"" + search + "\"";
 			ViewData["Title"] = title;
 			if (search == null)
 			{
-<<<<<<< HEAD
-				return Redirect("index");
-=======
-				return Redirect("Index");
->>>>>>> 57ebb562251c834765306ca6c5deb147d11c1caa
+				return RedirectToAction("Index","Home");
 			}
-			var homePageModel = _context.Products.Where(x => x.productName.Contains(search));
-			if (homePageModel == null)
+			var result = _context.Products.Where(x => x.productName.Contains(search) && x.IsApproved == 1);
+			if (result == null)
 			{
 				return NotFound();
 			}
 
-			return View("Search", homePageModel);
+			return View("Search", result);
 		}
 
 		public IActionResult Category(string search)
@@ -196,15 +191,15 @@ namespace Thinh.Controllers
 			ViewData["Title"] = search;
 			if (search == null)
 			{
-				return View("Index");
+				return RedirectToAction("Index", "Home");
 			}
-			var homePageModel = _context.Products.Where(x => x.productCategory == search);
-			if (homePageModel == null)
+			var result = _context.Products.Where(x => x.productCategory == search && x.IsApproved == 1);
+			if (result == null)
 			{
 				return NotFound();
 			}
 
-			return View("Search", homePageModel);
+			return View("Search", result);
 		}
 
 		public IActionResult Wish(int id)
@@ -241,6 +236,25 @@ namespace Thinh.Controllers
 				wishlist.Remove(item);
 			HttpContext.Session.SaveCart(wishlist);
 			return View("Wishlist", wishlist);
+		}
+		[HttpGet]
+		public async Task<IActionResult> ApproveList()
+		{
+			return View("Approve", await _context.Products.Where(x => x.IsApproved == 0).OrderByDescending(x => x.DateAdded).ToListAsync());
+		}
+
+		public async Task<IActionResult> Approve(int id)
+		{
+			Product approve = await _context.Products.FindAsync(id);
+			approve.IsApproved = 1;
+			approve.DateAdded = DateTime.Now;
+			if (ModelState.IsValid)
+			{
+				_context.Entry(approve).State = EntityState.Modified;
+				_context.SaveChanges();
+				return RedirectToAction("Index");
+			}
+			return View();
 		}
 	}
 }

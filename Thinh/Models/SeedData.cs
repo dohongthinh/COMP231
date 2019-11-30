@@ -33,7 +33,8 @@ namespace Thinh.Models
                         "Play games, stream videos and multitask with ease." +
                         "Flaunt the sleek design and the ergonomically placed rear Fingerprint Sensor.",
                         Price = "$178.90",
-                        DateAdded = DateTime.Now
+                        DateAdded = DateTime.Now,
+						IsApproved = 1
                     },
                     new Product
                     {
@@ -48,8 +49,9 @@ namespace Thinh.Models
                         "32GB of storage for your media, apps, and more. The reversible USB Type-C interface allows you to connect "+
                         "the device for mass-storage purposes and also serves as a charging port. ",
                         Price = "$499",
-                        DateAdded = DateTime.Now
-                    }, 
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					}, 
                     new Product
                     {
                         //productId = 3,
@@ -61,8 +63,9 @@ namespace Thinh.Models
                         "leap in battery life. And a mind‑blowing chip that doubles down on machine learning and pushes the " +
                         "boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro. ",
                         Price = "$949.99",
-                        DateAdded = DateTime.Now
-                    }, 
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					}, 
                     new Product
                     {
                         //productId = 4,
@@ -74,8 +77,9 @@ namespace Thinh.Models
                         "Glow. International version with seller-provided warranty. Contact the Seller on your Order Details page to " +
                         "initial a warranty claim. Do not contact the Original Manufacturer. ",
                         Price = "$1,329.99",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 5,
@@ -88,8 +92,9 @@ namespace Thinh.Models
                         "the Original Manufacturer. Large 6.3” Infinity Display, Intelligent S Pen, Android 9.0 (Pie) One UI, Triple-lens "+
                         "camera with 2x optical zoom, Non-removable Li-Ion 3500 mAh battery ",
                         Price = "$1,049.99",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 6,
@@ -99,8 +104,9 @@ namespace Thinh.Models
                         productDescription = "The 2006 Mercedes-Benz CLK-Class is a stylish, if expensive, melding of comfort and performance suitable for all but the most serious driving enthusiasts. ",
                         productImgUrl = "https://images.carpages.ca/inventory/4230390.125944824?w=1280&h=960&q=75&fit=max&s=fedcbc9981f7b062fa8a1adaaea51985",                     
                         Price = "$7,495",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 7,
@@ -110,8 +116,9 @@ namespace Thinh.Models
                         productDescription = "The 2016 Kia Soul's funky styling, fun-to-drive attitude, extensive feature content and wagon-based practicality make it a great choice for an urban commuter or as an alternative to a small crossover. ",
                         productImgUrl = "https://images.carpages.ca/inventory/4229163.125913741?w=1280&h=960&q=75&fit=max&s=4889c4042f7ab60debcd8ea573ebd6c3",
                         Price = "$15,995",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 8,
@@ -121,8 +128,9 @@ namespace Thinh.Models
                         productCategory = "Vehicles",
                         productDescription = "The 2018 Toyota Camry ranks among the best midsize sedans thanks to an abundance of standard features, pleasant driving dynamics, and a powerful yet fuel-efficient base engine. ",
                         Price = "$36,995",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 9,
@@ -132,8 +140,9 @@ namespace Thinh.Models
                         productCategory = "Vehicles",
                         productDescription = "The 2015 Jeep Cherokee is a five-seat compact SUV offered in four trim levels: Sport, Latitude, Limited and Trailhawk. Front-wheel drive is standard and can be upgraded to four-wheel drive on all but the Trailhawk, which has four-wheel drive standard. The Jeep Cherokee competes with other off-roaders like the Nissan Xterra and Toyota 4Runner, as well as the Chevrolet Equinox and Subaru Outback. ",
                         Price = "$15,999",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 10,
@@ -143,8 +152,9 @@ namespace Thinh.Models
                         productCategory = "Vehicles",
                         productDescription = "The 2014 Toyota RAV4 is a five-seat compact SUV that competes with the Honda CR-V, Ford Escape and Mazda CX-5, among others. Trim levels include the LE, XLE and Limited. All come with front-wheel drive or optional all-wheel drive. ",
                         Price = "$17,995",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 11,
@@ -154,8 +164,9 @@ namespace Thinh.Models
                         productCategory = "Accessories",
                         productUrl = "https://www.ray-ban.com/canada/en/sunglasses/RB2132%20UNISEX%20047-new%20wayfarer%20classic-gloss%20black/805289052418",
                         Price = "177.99$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 12,
@@ -165,8 +176,9 @@ namespace Thinh.Models
                         productCategory = "Accessories",
                         productUrl = "https://www.thenorthface.com/shop/mens-gore-closefit-fleece-gloves-nf0a3kp8",
                         Price = "50.00$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 13,
@@ -176,8 +188,9 @@ namespace Thinh.Models
                         productCategory = "Accessories",
                         productUrl = "https://www.machine-era.com/collections/frontpage/products/ti5-slim-wallet-dlc",
                         Price = "65.00$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 14,
@@ -187,8 +200,9 @@ namespace Thinh.Models
                         productCategory = "Accessories",
                         productUrl = "https://www.guessfactory.ca/en/catalog/view/women/handbags/view-all/julina-quilted-crossbody/dx-19-101?color=blush",
                         Price = "54.99$",
-                        DateAdded = DateTime.Now
-                     },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId = 15,
@@ -198,8 +212,9 @@ namespace Thinh.Models
                         productCategory = "Accessories",
                         productUrl = "https://www.canadagoose.com/ca/en/forester-jacket-print-5816MP.html",
                         Price = "850.00$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId= 16 ,
@@ -209,8 +224,9 @@ namespace Thinh.Models
                         productCategory = "Furnitures",
                         productUrl = "https://www.leons.ca/products/tessaro-pop-up-sofabed-charcoal",
                         Price = "799.00$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId= 17 ,
@@ -220,8 +236,9 @@ namespace Thinh.Models
                         productCategory = "Furnitures",
                         productUrl = "https://www.sleepfactory.com/product/madrid-metal-upholstered-platform-bed/",
                         Price = "199.00$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId= 18 ,
@@ -231,8 +248,9 @@ namespace Thinh.Models
                         productCategory = "Furnitures",
                         productUrl = "https://www.thebrick.com/products/talia-5-piece-dining-package",
                         Price = "749.98$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId= 19 ,
@@ -242,8 +260,9 @@ namespace Thinh.Models
                         productCategory = "Furnitures",
                         productUrl = "https://www.ikea.com/ca/en/p/lots-mirror-39151700/",
                         Price = "9.99$",
-                        DateAdded = DateTime.Now
-                    },
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					},
                     new Product
                     {
                         //productId= 20 ,
@@ -253,8 +272,9 @@ namespace Thinh.Models
                         productCategory = "Furnitures",
                         productUrl = "https://www.structube.com/en/mika-coffee-table-110cm-43-97-38-50?pid=27632",
                         Price = "329.00$",
-                        DateAdded = DateTime.Now
-                    }
+						DateAdded = DateTime.Now,
+						IsApproved = 1
+					}
                 );
                 context.SaveChanges();
             }

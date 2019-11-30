@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Thinh.Data;
 using Thinh.Models;
 
 namespace Thinh.Controllers
 {
     [Authorize]
     public class AccountController : Controller
-    {
-        private readonly UserManager<ApplicationUser> _userManager;
+	{
+		private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         
         private readonly ILogger _logger;
@@ -59,10 +60,8 @@ namespace Thinh.Controllers
                 if (result.Succeeded)
                 {
                     var user = await _userManager.FindByEmailAsync(model.Email);
-                    var roles = await _userManager.GetRolesAsync(user);
-                    roles.ToList().Sort();
                     _logger.LogInformation("User logged in.");
-                    return RedirectToAction("Index", "HomePage");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             return View(model);
@@ -102,8 +101,7 @@ namespace Thinh.Controllers
                 AddErrors(result);
             }
 
-            // If we got this far, something failed, redisplay form
-            return View(model);
+            return View("Login");
         }
 
         [HttpPost]
@@ -134,5 +132,11 @@ namespace Thinh.Controllers
                 return RedirectToAction(nameof(AccountController.Login), "Login");
             }
         }
-    }
+
+		public async Task<IActionResult> UserInfo()
+		{
+			ApplicationUser user = await _userManager.GetUserAsync(HttpContext.User);
+			return View(user);
+		}
+	}
 }
