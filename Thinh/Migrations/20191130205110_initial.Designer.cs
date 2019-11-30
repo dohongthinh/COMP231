@@ -10,8 +10,8 @@ using Thinh.Data;
 namespace Thinh.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191125035433_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20191130205110_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -146,6 +146,8 @@ namespace Thinh.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<int>("IsAdmin");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -180,33 +182,6 @@ namespace Thinh.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
-                });
-
-            modelBuilder.Entity("Thinh.Models.HomePageModel", b =>
-                {
-                    b.Property<string>("productId")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(38);
-
-                    b.Property<string>("productCode")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.Property<string>("productDescription");
-
-                    b.Property<string>("productImg");
-
-                    b.Property<string>("productName")
-                        .IsRequired()
-                        .HasMaxLength(254);
-
-                    b.Property<string>("productTypeName");
-
-                    b.Property<string>("productUrl");
-
-                    b.HasKey("productId");
-
-                    b.ToTable("HomePageModel");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

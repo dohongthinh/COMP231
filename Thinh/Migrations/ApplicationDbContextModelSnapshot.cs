@@ -182,36 +182,6 @@ namespace Thinh.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("Thinh.Models.Product", b =>
-                {
-                    b.Property<int>("productId")
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(38)
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("DateAdded");
-
-                    b.Property<DateTime?>("LastEdit");
-
-                    b.Property<string>("Price");
-
-                    b.Property<string>("productCategory");
-
-                    b.Property<string>("productDescription");
-
-                    b.Property<string>("productImgUrl");
-
-                    b.Property<string>("productName")
-                        .IsRequired()
-                        .HasMaxLength(254);
-
-                    b.Property<string>("productUrl");
-
-                    b.HasKey("productId");
-
-                    b.ToTable("Products");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")

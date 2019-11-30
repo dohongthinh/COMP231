@@ -10,8 +10,8 @@ using Thinh.Data;
 namespace Thinh.Migrations.ProductDb
 {
     [DbContext(typeof(ProductDbContext))]
-    [Migration("20191130004926_approve")]
-    partial class approve
+    [Migration("20191130205142_intia")]
+    partial class intia
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

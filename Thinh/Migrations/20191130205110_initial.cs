@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Thinh.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,28 +40,12 @@ namespace Thinh.Migrations
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false)
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    IsAdmin = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "HomePageModel",
-                columns: table => new
-                {
-                    productId = table.Column<string>(maxLength: 38, nullable: false),
-                    productCode = table.Column<string>(maxLength: 50, nullable: false),
-                    productName = table.Column<string>(maxLength: 254, nullable: false),
-                    productTypeName = table.Column<string>(nullable: true),
-                    productUrl = table.Column<string>(nullable: true),
-                    productDescription = table.Column<string>(nullable: true),
-                    productImg = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HomePageModel", x => x.productId);
                 });
 
             migrationBuilder.CreateTable(
@@ -226,9 +210,6 @@ namespace Thinh.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "HomePageModel");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

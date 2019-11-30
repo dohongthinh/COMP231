@@ -7,10 +7,12 @@
 <h2>UserInfo</h2>
 @{ if (Model.IsAdmin == 1)
     {
-        <a asp-area="" asp-controller="Home" asp-action="ApproveList" title="Pending">Pending</a>
+        <a asp-area="" asp-controller="Home" asp-action="ApproveList" title="Pending Products">Pending Products</a>
+        <br />
+        <a asp-area="" asp-controller="Home" asp-action="FeedbackList" title="View Feedbacks">View Feedbacks</a>
     }
     else
     {
-        <a asp-area="" asp-controller="Home" asp-action="Index" title="Manage">Lul Send Halp</a>
+        <a asp-area="" asp-controller="Home" asp-action="Index" title="Manage">Please go back to home page in order to continue shopping!</a>
     }
 }
