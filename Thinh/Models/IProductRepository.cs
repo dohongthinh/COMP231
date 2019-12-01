@@ -9,7 +9,7 @@ namespace Thinh.Models
     public interface IProductRepository
     {
 		IQueryable<Product> Products(int approve);
-		Task<Product> GetProduct(int id);
+		Product GetProduct(int id);
 		void SaveProduct(Product product);
 		Product DeleteProduct(int productId);
 		IQueryable<Product> Search(string search);

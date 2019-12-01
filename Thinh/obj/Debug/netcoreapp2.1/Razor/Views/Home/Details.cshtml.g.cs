@@ -158,7 +158,7 @@ WriteAttributeValue("", 869, Html.DisplayFor(model => model.productUrl), 869, 43
             WriteLiteral(">Visit Seller</a>\r\n            ");
             EndContext();
             BeginContext(944, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "541dca882a8340738dcf4432ee45af89", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "963074a53ecc4c808f0e6545f49327ec", async() => {
                 BeginContext(1051, 15, true);
                 WriteLiteral("Add to Wishlist");
                 EndContext();
@@ -206,7 +206,7 @@ WriteAttributeValue("", 869, Html.DisplayFor(model => model.productUrl), 869, 43
             WriteLiteral("            ");
             EndContext();
             BeginContext(1160, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b59ca5fcfcb24673b36376ecb52a074e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f8e26212c1b4b9ab38bccc408e18178", async() => {
                 BeginContext(1265, 7, true);
                 WriteLiteral("Approve");
                 EndContext();
@@ -244,7 +244,7 @@ WriteAttributeValue("", 869, Html.DisplayFor(model => model.productUrl), 869, 43
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1290, 121, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1aea0d6e3b5a49e5b05461c16f464f85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1248a140955b44a0a31c21b7f4a4548e", async() => {
                 BeginContext(1403, 4, true);
                 WriteLiteral("Deny");
                 EndContext();
@@ -291,7 +291,7 @@ WriteAttributeValue("", 869, Html.DisplayFor(model => model.productUrl), 869, 43
             WriteLiteral("    </div>\n<div>\n    ");
             EndContext();
             BeginContext(1493, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "06d056fbc89b41a3889cd3cd944f6055", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "777f9c9f12474f7eadda3487b6df1ff9", async() => {
                 BeginContext(1561, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

@@ -41,10 +41,10 @@ namespace Thinh.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(string returnUrl = null)
+        public ViewResult Login(string returnUrl = null)
         {
             // Clear the existing external cookie to ensure a clean login process
-            await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
+            //await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ViewData["ReturnUrl"] = returnUrl;
             return View();
@@ -63,12 +63,10 @@ namespace Thinh.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    var user = await _userManager.FindByEmailAsync(model.Email);
-                    _logger.LogInformation("User logged in.");
                     return RedirectToAction("Index", "Home");
                 }
             }
-            return View(model);
+            return View("Login", model);
         }
 
         [HttpGet]
@@ -82,7 +80,7 @@ namespace Thinh.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
+        public async Task<ViewResult> Register(RegisterViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
@@ -91,21 +89,20 @@ namespace Thinh.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
 
-                    //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    //var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
-                    //await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
+					//var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+					//var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
+					//await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
 
-                    //diallowed signin for self registration, email should be confirmed first
-                    //await _signInManager.SignInAsync(user, isPersistent: false);
-                    //_logger.LogInformation("User created a new account with password.");
-                    //return RedirectToConfirmEmailNotification();
-                }
+					//diallowed signin for self registration, email should be confirmed first
+					//await _signInManager.SignInAsync(user, isPersistent: false);
+					//_logger.LogInformation("User created a new account with password.");
+					return View("Login");
+				}
                 AddErrors(result);
             }
 
-            return View("Login");
+            return View("Register");
         }
 
         [HttpPost]
@@ -144,12 +141,12 @@ namespace Thinh.Controllers
 		}
 
 		// GET: HomePage/Create
-		public IActionResult Create()
+		public ActionResult Create()
 		{
-			return View();
+			return View("Create");
 		}
 		[HttpPost]
-		public IActionResult Create([Bind("productName,productCategory,productUrl,productDescription,productImgUrl,Price")] Product addProduct)
+		public ActionResult Create([Bind("productName,productCategory,productUrl,productDescription,productImgUrl,Price")] Product addProduct)
 		{
 			if (ModelState.IsValid)
 			{
@@ -157,35 +154,32 @@ namespace Thinh.Controllers
 				_context.SaveProduct(addProduct);
 				return RedirectToAction("Index", "Home");
 			}
-			return View(addProduct);
+			return View("Create", addProduct);
 		}
 
-
-		[HttpGet]
-		public async Task<IActionResult> FeedbackList()
+		public ViewResult FeedbackList()
 		{
-			return View("FeedbackList", await _context.FeedbackList().ToListAsync());
+			return View("FeedbackList", _context.FeedbackList().ToList());
 		}
 
-		[HttpGet]
-		public async Task<IActionResult> ApproveList()
+		public ViewResult ApproveList()
 		{
-			return View("Approve", await _context.Products(0).ToListAsync());
+			return View("Approve", _context.Products(0).ToList());
 		}
 
-		public async Task<IActionResult> Approve(int id)
+		public ViewResult Approve(int id)
 		{
-			Product approve = await _context.GetProduct(id);
+			Product approve = _context.GetProduct(id);
 			approve.IsApproved = 1;
 			approve.DateAdded = DateTime.Now;
 			if (ModelState.IsValid)
 			{
 				_context.SaveProduct(approve);
-				return RedirectToAction("ApproveList");
+				return View("ApproveList");
 			}
 			return View();
 		}
-		public IActionResult DeleteProduct(int id)
+		public ActionResult DeleteProduct(int id)
 		{
 			if (ModelState.IsValid)
 			{

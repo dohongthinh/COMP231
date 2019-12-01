@@ -25,7 +25,7 @@ namespace Thinh.Controllers
 		}
 
 		// GET: HomePage
-		public async Task<IActionResult> Index()
+		public async Task<ViewResult> Index()
 		{
 			ApplicationUser user = await _userManager.GetUserAsync(HttpContext.User);
 			if(user != null)
@@ -35,47 +35,45 @@ namespace Thinh.Controllers
 					ViewData["Admin"] = 1;
 				}
 			}
-			return View("Index", await _context.Products(1).ToListAsync());
+			return View("Index", _context.Products(1).ToList());
 		}
 
 		// GET: HomePage/Details/5
-		public async Task<IActionResult> Details(int id)
+		public ViewResult Details(int id)
 		{
 			if (id == 0)
 			{
-				return NotFound();
+				return View("Index");
 			}
 
-			var prodDetail = await _context.GetProduct(id);
+			var prodDetail = _context.GetProduct(id);
 			if (prodDetail == null)
 			{
-				return NotFound();
+				return View("Index");
 			}
-
-			return View(prodDetail);
+			return View("Details",prodDetail);
 		}
 
 		[HttpGet]
 		public ViewResult Contact()
 		{
-			return View();
+			return View("Contact");
 		}
 		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public IActionResult Contact([Bind("Email,Feedback")] Feedbacks fb)
+		public ActionResult Contact([Bind("Email,Feedback")] Feedbacks fb)
 		{
 			if (ModelState.IsValid)
 			{
 				_context.AddFeedback(fb);
-				return RedirectToAction("Index", "Home");
+				return View("Index");
 			}
-			return View(fb);
+			return View("Contact",fb);
 		}
-		public IActionResult Search(string search)
+		public ActionResult Search(string search)
 		{
 			if (search == null)
 			{
-				return RedirectToAction("Index", "Home");
+				return View("Index");
 			}
 			var result = _context.Search(search);
 
@@ -84,28 +82,28 @@ namespace Thinh.Controllers
 			return View("Search", result);
 		}
 
-		public IActionResult Category(string cat)
+		public ActionResult Category(string cat)
 		{
 			ViewData["Title"] = cat;
 			if (cat == null)
 			{
-				return RedirectToAction("Index", "Home");
+				return View("Index");
 			}
 			var result = _context.Category(cat);
 
 			return View("Search", result);
 		}
 
-		public async Task<IActionResult> Wish(int id)
+		public ViewResult Wish(int id)
 		{
 			if (id == 0)
 			{
-				return NotFound();
+				return View("Index");
 			}
-			var test = await _context.GetProduct(id);
+			var test = _context.GetProduct(id);
 			if (test == null)
 			{
-				return NotFound();
+				return View("Index");
 			}
 			List<Product> wishlist = HttpContext.Session.GetList();
 			bool alreadyExists = wishlist.Any(x => x.productId == id);
@@ -118,8 +116,8 @@ namespace Thinh.Controllers
 		}
 		public IActionResult Wishlist()
 		{
-			List<Product> wishlist = HttpContext.Session.GetList();
-			return View("Wishlist", wishlist);
+				List<Product> wishlist = HttpContext.Session.GetList();
+				return View("Wishlist", wishlist);
 		}
 		public IActionResult DeleteWish(int id)
 		{

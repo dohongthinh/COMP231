@@ -86,7 +86,7 @@ Write(ViewData["Title"].ToString());
             WriteLiteral("        <div style=\"min-height: 300px;\" class=\"col-md-4\">\r\n            ");
             EndContext();
             BeginContext(331, 306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "158b64aa111b4445b4e0e6db4f030180", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "121574ecfc9c4560a8d8775a0dbdbc6b", async() => {
                 BeginContext(422, 47, true);
                 WriteLiteral("\r\n                <img width=\"300\" height=\"300\"");
                 EndContext();
@@ -153,7 +153,7 @@ WriteAttributeValue("", 475, Html.DisplayFor(model => Model.ElementAt(i).product
             WriteLiteral("\r\n            </p>\r\n\r\n            ");
             EndContext();
             BeginContext(757, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bc740b3836344b688ad4fe02f46abd3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "380637bfe75348a9adf4252ad5f2c42a", async() => {
                 BeginContext(875, 7, true);
                 WriteLiteral("Approve");
                 EndContext();
@@ -191,7 +191,7 @@ WriteAttributeValue("", 475, Html.DisplayFor(model => Model.ElementAt(i).product
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(900, 134, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "629d81508fad41d0bd78575455cd73ef", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0290f06b4fcc48d486d564f760414d97", async() => {
                 BeginContext(1026, 4, true);
                 WriteLiteral("Deny");
                 EndContext();

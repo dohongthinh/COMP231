@@ -285,10 +285,8 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\T
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.pdb
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.dll
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\bin\Debug\netcoreapp2.1\Thinh.Views.pdb
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csprojAssemblyReference.cache
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cache
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorAssemblyInfo.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfoInputs.cache
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.AssemblyInfo.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.TagHelpers.input.cache
@@ -364,4 +362,5 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\R
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Delete.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Edit.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\FeedbackList.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Index.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

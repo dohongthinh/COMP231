@@ -30,9 +30,9 @@ namespace Thinh.Models
 			return dbEntry;
 		}
 
-		public Task<Product> GetProduct(int id)
+		public Product GetProduct(int id)
 		{
-			return context.Products.FindAsync(id);
+			return context.Products.Find(id);
 		}
 
 		public void SaveProduct(Product product)

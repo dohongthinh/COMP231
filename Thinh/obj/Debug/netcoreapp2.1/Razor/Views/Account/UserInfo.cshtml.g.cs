@@ -78,7 +78,7 @@ using Thinh.Models;
             WriteLiteral("        ");
             EndContext();
             BeginContext(192, 110, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ac2c7575d78044678fbe21072eca7280", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5e06624102c4fd6a8c9fdf937b7f7f3", async() => {
                 BeginContext(282, 16, true);
                 WriteLiteral("Pending Products");
                 EndContext();
@@ -105,7 +105,7 @@ using Thinh.Models;
             WriteLiteral("\r\n        <br />\r\n        ");
             EndContext();
             BeginContext(328, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd5e26151321495d84b322b0e673599a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f336e8ae80bc4f1c96ff4d9656f9cd0e", async() => {
                 BeginContext(417, 14, true);
                 WriteLiteral("View Feedbacks");
                 EndContext();
@@ -142,7 +142,7 @@ using Thinh.Models;
             WriteLiteral("        ");
             EndContext();
             BeginContext(469, 133, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c9c6f3c686e435ba380e1b552534d31", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6ed0ae112c9431d99349b9bb48b9bed", async() => {
                 BeginContext(540, 58, true);
                 WriteLiteral("Please go back to home page in order to continue shopping!");
                 EndContext();
