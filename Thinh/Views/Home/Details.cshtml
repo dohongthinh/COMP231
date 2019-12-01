@@ -27,11 +27,22 @@
         <dd>
         </dd>
     </dl>
-    <a class="btn btn-primary" href="@Html.DisplayFor(model => model.productUrl)">Visit Seller</a>
-    <a class="btn btn-outline-primary" asp-action="Wish" asp-route-id="@Model.productId">Add to Wishlist</a>
-    <br />
-    <br />
-</div>
+    @{ if (Model.IsApproved == 1)
+        {
+            <a class="btn btn-primary" href="@Html.DisplayFor(model => model.productUrl)">Visit Seller</a>
+            <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Wish" asp-route-id="@Model.productId">Add to Wishlist</a>
+            <br />
+            <br />
+        }
+        else
+        {
+            <a class="btn btn-primary" asp-controller="Account" asp-action="Approve" asp-route-id="@Model.productId">Approve</a>
+            <a class="btn btn-secondary" asp-controller="Account" asp-action="DeleteProduct" asp-route-id="@Model.productId">Deny</a>
+            <br />
+            <br />
+        }
+     }
+    </div>
 <div>
-    <a class="btn btn-primary" asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Back to List</a>
 </div>

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Thinh.Data;
 using Thinh.Models;
@@ -17,11 +18,13 @@ namespace Thinh.Controllers
 	{
 		private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        
-        private readonly ILogger _logger;
+		private readonly IProductRepository _context;
 
-        public AccountController(
-            UserManager<ApplicationUser> userManager,
+		private readonly ILogger _logger;
+
+        public AccountController(IProductRepository context,
+
+			UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             
             ILogger<AccountController> logger)
@@ -29,6 +32,7 @@ namespace Thinh.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
             
+			_context = context;
             _logger = logger;
         }
 
@@ -137,6 +141,58 @@ namespace Thinh.Controllers
 		{
 			ApplicationUser user = await _userManager.GetUserAsync(HttpContext.User);
 			return View(user);
+		}
+
+		// GET: HomePage/Create
+		public IActionResult Create()
+		{
+			return View();
+		}
+		[HttpPost]
+		public IActionResult Create([Bind("productName,productCategory,productUrl,productDescription,productImgUrl,Price")] Product addProduct)
+		{
+			if (ModelState.IsValid)
+			{
+				addProduct.DateAdded = DateTime.Now;
+				_context.SaveProduct(addProduct);
+				return RedirectToAction("Index", "Home");
+			}
+			return View(addProduct);
+		}
+
+
+		[HttpGet]
+		public async Task<IActionResult> FeedbackList()
+		{
+			return View("FeedbackList", await _context.FeedbackList().ToListAsync());
+		}
+
+		[HttpGet]
+		public async Task<IActionResult> ApproveList()
+		{
+			return View("Approve", await _context.Products(0).ToListAsync());
+		}
+
+		public async Task<IActionResult> Approve(int id)
+		{
+			Product approve = await _context.GetProduct(id);
+			approve.IsApproved = 1;
+			approve.DateAdded = DateTime.Now;
+			if (ModelState.IsValid)
+			{
+				_context.SaveProduct(approve);
+				return RedirectToAction("ApproveList");
+			}
+			return View();
+		}
+		public IActionResult DeleteProduct(int id)
+		{
+			if (ModelState.IsValid)
+			{
+				_context.DeleteProduct(id);
+				return RedirectToAction("Index", "Home");
+			}
+			return View();
 		}
 	}
 }

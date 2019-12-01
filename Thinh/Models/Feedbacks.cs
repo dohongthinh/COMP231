@@ -10,10 +10,13 @@ namespace Thinh.Models
     {
         [Key]
         public int FeedbackId { get; set; }
-        [Display(Name = "Email")]
-        public String Email { get; set; }
+		[Required]
+		[EmailAddress]
+		[Display(Name = "Email")]
+        public string Email { get; set; }
 
-        [Display(Name = "Feedback")]
-        public String Feedback { get; set; }
-    }
+		[Required]
+		[Display(Name = "Feedback")]
+        public string Feedback { get; set; }
+	}
 }

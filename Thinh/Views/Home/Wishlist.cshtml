@@ -13,10 +13,10 @@
 {
     <br />
     <a href="@item.productUrl">@item.productName</a>
-    <a class="btn-secondary btn-sm" asp-action="DeleteWish" asp-route-id="@item.productId">
+    <a class="btn-secondary btn-sm" asp-controller="Home" asp-action="DeleteWish" asp-route-id="@item.productId">
         <span>Remove</span>
     </a>
     <br />
 }
 <br />
-<a class="btn btn-primary" asp-action="Index">Back to List</a>
+<a class="btn btn-primary" asp-controller="Home" asp-action="Index">Back to List</a>

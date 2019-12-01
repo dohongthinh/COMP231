@@ -296,15 +296,10 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\T
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.RazorCoreGenerate.cache
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Delete.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Details.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Edit.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -314,10 +309,8 @@ C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\T
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.dll
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Seller\Create.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Wishlist.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Search.cshtml.g.cs
-C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\Approve.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Info.cshtml.g.cs
 C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\UserInfo.cshtml.g.cs
 C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231\Thinh\bin\Debug\netcoreapp2.1\appsettings.Development.json
@@ -366,3 +359,9 @@ C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231\Thinh\obj\Debug\netcoreapp2.1\
 C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231\Thinh\obj\Debug\netcoreapp2.1\Thinh.pdb
 C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231\Thinh\obj\Debug\netcoreapp2.1\Thinh.csproj.CopyComplete
 C:\Users\Huy Hoang\Desktop\Fifth semester\COMP231\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Home\FeedbackList.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Approve.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Create.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Delete.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\Edit.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Account\FeedbackList.cshtml.g.cs
+C:\Users\pviet\Desktop\New folder\COMP231-master\Thinh\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Index.cshtml.g.cs

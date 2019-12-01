@@ -24,12 +24,12 @@ namespace Thinh.Models
 	public static class Wishlist
 	{
 		private const string CartSessionKey = "Wishlist";
-		public static List<Product> GetCart(this ISession session)
+		public static List<Product> GetList(this ISession session)
 		{
 			return session.GetObjectFromJson<List<Product>>(CartSessionKey) ?? new List<Product>();
 		}
 
-		public static void SaveCart(this ISession session, List<Product> cart)
+		public static void SaveList(this ISession session, List<Product> cart)
 		{
 			session.SetObjectAsJson(CartSessionKey, cart);
 		}
